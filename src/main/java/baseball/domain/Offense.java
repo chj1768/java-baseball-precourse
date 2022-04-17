@@ -27,7 +27,7 @@ public class Offense implements BaseballPlayer<List<Integer>> {
     }
 
     private void validate(String input) {
-        if (input.length() != 3)
+        if (input == null || input.length() != 3)
             throw new IllegalArgumentException();
     }
 
