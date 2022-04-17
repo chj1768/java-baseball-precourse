@@ -1,6 +1,6 @@
 package baseball.domain;
 
-public interface BaseballCounter<T> {
+interface BaseballCounter<T> {
     void count(T offenseScore, T defenceScore, BaseballCount score);
 }
 

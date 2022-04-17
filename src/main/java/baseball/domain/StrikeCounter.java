@@ -3,7 +3,7 @@ package baseball.domain;
 import java.util.List;
 import java.util.Objects;
 
-public class StrikeCounter implements BaseballCounter<List<Integer>> {
+class StrikeCounter implements BaseballCounter<List<Integer>> {
     @Override
     public void count(List<Integer> offenseScore, List<Integer> defenceScore, BaseballCount count) {
         for (int i = 0; i < defenceScore.size(); i++) {

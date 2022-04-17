@@ -5,10 +5,10 @@ import camp.nextstep.edu.missionutils.Randoms;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Defence implements BaseballPlayer<List<Integer>> {
+class Defence implements BaseballPlayer<List<Integer>> {
     private final List<Integer> score;
 
-    public Defence() {
+    Defence() {
         this.score = get();
     }
 

@@ -3,10 +3,10 @@ package baseball.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Offense implements BaseballPlayer<List<Integer>> {
+class Offense implements BaseballPlayer<List<Integer>> {
     private final List<Integer> score;
 
-    public Offense(String input) {
+    Offense(String input) {
         this.score = getScore(input);
     }
 

@@ -1,5 +1,5 @@
 package baseball.domain;
 
-public interface BaseballPlayer<T> {
+interface BaseballPlayer<T> {
     T play();
 }

@@ -6,6 +6,15 @@ public class BaseballCount {
     private int strike = 0;
     private int ball = 0;
 
+    public BaseballCount() {
+    }
+
+    @VisibleForTesting
+    BaseballCount(int strike, int ball) {
+        this.strike = strike;
+        this.ball = ball;
+    }
+
     @VisibleForTesting
     int getStrike() {
         return strike;
@@ -14,15 +23,6 @@ public class BaseballCount {
     @VisibleForTesting
     int getBall() {
         return ball;
-    }
-
-    public BaseballCount() {
-    }
-
-    @VisibleForTesting
-    BaseballCount(int strike, int ball) {
-        this.strike = strike;
-        this.ball = ball;
     }
 
     public void strike() {

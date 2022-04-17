@@ -2,7 +2,7 @@ package baseball.domain;
 
 import java.util.List;
 
-public class BallCounter implements BaseballCounter<List<Integer>> {
+class BallCounter implements BaseballCounter<List<Integer>> {
     @Override
     public void count(List<Integer> offenseScore, List<Integer> defenceScore, BaseballCount count) {
         for (int i = 0; i < offenseScore.size(); i++) {
@@ -10,7 +10,8 @@ public class BallCounter implements BaseballCounter<List<Integer>> {
         }
     }
 
-    private void countBall(Integer offenseScoreItem, List<Integer> defenceScore, BaseballCount count, int offenseItemIndex) {
+    private void countBall(Integer offenseScoreItem, List<Integer> defenceScore, BaseballCount count,
+            int offenseItemIndex) {
         if (defenceScore.contains(offenseScoreItem) && defenceScore.indexOf(offenseScoreItem) != offenseItemIndex)
             count.ball();
     }
