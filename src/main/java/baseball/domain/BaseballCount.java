@@ -3,6 +3,9 @@ package baseball.domain;
 import org.assertj.core.util.VisibleForTesting;
 
 public class BaseballCount {
+    private int strike = 0;
+    private int ball = 0;
+
     @VisibleForTesting
     int getStrike() {
         return strike;
@@ -13,8 +16,14 @@ public class BaseballCount {
         return ball;
     }
 
-    private int strike = 0;
-    private int ball = 0;
+    public BaseballCount() {
+    }
+
+    @VisibleForTesting
+    BaseballCount(int strike, int ball) {
+        this.strike = strike;
+        this.ball = ball;
+    }
 
     public void strike() {
         this.strike += 1;
